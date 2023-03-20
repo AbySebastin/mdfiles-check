@@ -4,6 +4,10 @@ const button = document.querySelector('button');
 const input = document.getElementById('item');
 let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
+
+console.log(input,"Input");
+alert(input);
+
 localStorage.setItem('items', JSON.stringify(itemsArray));
 const data = JSON.parse(localStorage.getItem('items'));
 
