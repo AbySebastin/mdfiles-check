@@ -17,7 +17,7 @@ console.log(role,"ROLE");
 // });
 
 button.addEventListener('click', function () {
-  if(role == "SR003") {
+  if(localStorage.getItem('roleCode') == "SR003") {
     alert("Logged In");
   }
   else {
