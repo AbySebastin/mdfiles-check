@@ -1,16 +1,7 @@
 <ul>
 {% for item in site.data.samplelist.toc %}
     <h3>{{ item.title }}</h3>
-      <ul>
-          var ls = require('local-storage');
-            ls.set('foo', 'bar');
-    ls.get('foo');
-    ls.get('eInternObject');
-          > **Note**
-> This is a note
-
-> **Warning**
-> ls.get('eInternObject');
+      <ul>        
           
         {% for entry in item.subfolderitems %}
           <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
@@ -18,3 +9,35 @@
       </ul>
 {% endfor %}
 </ul>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>New Tab App</title>
+
+  <link rel="stylesheet" href="css/primitive.css">
+</head>
+
+<body>
+
+  <div class="small-container">
+    <h1>New Tab App</h1>
+
+    <form>
+      <input id="item" type="text" placeholder="New">
+    </form>
+
+    <h2>Items</h2>
+    <ul></ul>
+
+    <button>Clear All</button>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
