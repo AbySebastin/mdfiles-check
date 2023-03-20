@@ -1,4 +1,4 @@
-
+const button = document.querySelector('button');
 const role = localStorage.getItem('roleCode');
 
 console.log(role,"ROLE");
